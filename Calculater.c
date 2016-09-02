@@ -15,6 +15,10 @@ int mult(int number1, int number2){
 	return mult;
 }
 
+int div(int number1, int number2){
+	int div = number1 / number2;
+	return div;
+}
 void main() {
 	int number1 , number2	;
 	char symbol;
@@ -33,5 +37,10 @@ void main() {
 	{
 		int result = mult(number1,number2);
 		printf ("product is = %d\n",result);
+	}
+	else if (symbol == '/')
+	{
+		int result = div(number1,number2);
+		printf ("quotients is = %d\n",result);
 	}
 }
