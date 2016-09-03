@@ -41,4 +41,7 @@ int main (int argc, char const *argv[]) {
 		int result = sub(atoi(argv[1]) , atoi(argv[3]) );
 		printf ("sub is = %d\n",result);
 	}
+	else{
+		printf("enter right arithmetic operators\n");
+	}
 }
