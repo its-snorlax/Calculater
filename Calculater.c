@@ -23,23 +23,25 @@ int division(int number1, int number2){
 }
 
 int main (int argc, char const *argv[]) {
+	int number1 = atoi(argv[1]);
+	int number2 = atoi(argv[3]);
 
 	if (strcmp(argv[2] , "+") == 0) {
-		int result = add(atoi(argv[1]) , atoi(argv[3]) );
-		printf ("sum is = %d\n",result);
+		int result = add (number1 , number2);
+		printf ("sum is = %d\n", result);
 	}
 	else if (strcmp(argv[2] , "-") == 0) {
 		printf("%s\n",argv[2]);
-		int result = sub(atoi(argv[1]) , atoi(argv[3]) );
-		printf ("sub is = %d\n",result);
+		int result = sub (number1 , number2);
+		printf ("sub is = %d\n", result);
 	}
 	else if (strcmp(argv[2] , "*") == 0) {
-		int result = sub(atoi(argv[1]) , atoi(argv[3]) );
-		printf ("sub is = %d\n",result);
+		int result = mult (number1 , number2);
+		printf ("product is = %d\n", result);
 	}
 	else if (strcmp(argv[2] , "/") == 0) {
-		int result = sub(atoi(argv[1]) , atoi(argv[3]) );
-		printf ("sub is = %d\n",result);
+		int result = division (number1 , number2);
+		printf ("quotient  is = %d\n", result);
 	}
 	else{
 		printf("enter right arithmetic operators\n");
