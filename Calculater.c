@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "opration.h"
+#include "oprations.h"
+
 int main (int argc, char const *argv[]){
 	int number1 = atoi(argv[1]);
 	int number2 = atoi(argv[3]);
@@ -10,7 +11,6 @@ int main (int argc, char const *argv[]){
 		printf("Sum = %d \n",add(number1,number2));
 	}
 	else if (strcmp(argv[2] , "-") == 0){
-		printf("%s\n",argv[2]);
 		printf("Sub = %d \n",sub(number1,number2));
 	}
 	else if (strcmp(argv[2] , "*") == 0){
